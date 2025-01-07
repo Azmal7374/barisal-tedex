@@ -17,28 +17,28 @@ const EventSection = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-50"></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl sm:mx-auto sm:p-12 md:pt[100px]  ">
-        <h2
+       <div className="md:mt-[140px]">
+       <h2
           className={`${bebasNeue.className} text-[28px] sm:text-[36px] md:text-[52px] leading-[62.4px] text-[#FFFFFF] uppercase font-normal sm:text-center`}
         >
           JOIN TEDx BARISHAL 2025
         </h2>
         <p
-          className={`${inter.variable} text-[14px] sm:text-[16px] md:text-[18px] leading-relaxed text-whiteleading-[27px] text-[#FFFFFF]  font-normal sm:text-center mt-4`}
+          className={`${inter.variable} text-[14px] sm:text-[16px] md:text-[18px] leading-relaxed text-whiteleading-[27px] text-[#FFFFFF]  font-normal sm:text-center md:w-[564px]`}
         >
           Join TEDx Barishal to meet amazing ideas and people to grow your
           thoughts and evolve yourself with unique insights.
         </p>
 
+       </div>
         {/* Information Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:mt-[250px] md:mb-[78px]">
           {/* Card 1 */}
           <div className="bg-white p-4 sm:p-6 rounded-[14px] shadow-lg flex flex-col sm:gap-[20px] md:gap-[55px]  items-center md:text-start  md:items-start md:pt-[29px] md:pb-[29px] md:pl-[27px] md:pr-[27px]">
             <svg
-            className="text-[#141B34]  bg-[#F5F5F5] py-[10px] w-[52px] h-[52px] border-[1px] border-[#F5F5F5]  rounded-[12px]"
+              className="text-[#141B34]  bg-[#F5F5F5] py-[10px] w-[52px] h-[52px] border-[1px] border-[#F5F5F5]  rounded-[12px]"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 33 32"
               fill="none"
@@ -57,14 +57,14 @@ const EventSection = () => {
             <p
               className={`${inter.variable} text-[14px] sm:text-[16px] md:text-[18px] text-[#222222] font-medium mt-4`}
             >
-            Barishal University
+              Barishal University
             </p>
           </div>
 
           {/* Card 2 */}
           <div className="bg-white p-4 sm:p-6 rounded-[14px] shadow-lg flex flex-col sm:gap-[20px] md:gap-[55px] items-center md:text-start  md:items-start  md:pt-[29px] md:pb-[29px] md:pl-[27px] md:pr-[27px]">
             <svg
-               className="text-[#141B34]  bg-[#F5F5F5] py-[10px] w-[52px] h-[52px] border-[1px] border-[#F5F5F5]  rounded-[12px]"
+              className="text-[#141B34]  bg-[#F5F5F5] py-[10px] w-[52px] h-[52px] border-[1px] border-[#F5F5F5]  rounded-[12px]"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 33 32"
               fill="none"
@@ -106,7 +106,7 @@ const EventSection = () => {
           </div>
 
           {/* Card 3 */}
-          <div  className="bg-white p-4 sm:p-6 rounded-[14px] shadow-lg flex flex-col sm:gap-[20px] md:gap-[55px]  items-center md:text-start  md:items-start md:pt-[29px] md:pb-[29px] md:pl-[27px] md:pr-[27px]">
+          <div className="bg-white p-4 sm:p-6 rounded-[14px] shadow-lg flex flex-col sm:gap-[20px] md:gap-[55px]  items-center md:text-start  md:items-start md:pt-[29px] md:pb-[29px] md:pl-[27px] md:pr-[27px]">
             <svg
               className="text-[#141B34]  bg-[#F5F5F5] py-[10px] w-[52px] h-[52px] border-[1px] border-[#F5F5F5]  rounded-[12px]"
               xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,6 @@ const EventSection = () => {
             </p>
           </div>
         </div>
-      </div>
     </section>
   );
 };

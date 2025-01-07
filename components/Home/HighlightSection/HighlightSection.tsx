@@ -30,7 +30,7 @@ const HighlightsSection = () => {
       title: "Spark Growth with Exchange Insights",
       description:
         "Dive into a dynamic flow of ideas, a treasure trove that fuels innovation. Exchanging insights with like-minded minds unlocks new synergies, empowering you to tackle new challenges.",
-    }
+    },
   ];
 
   return (
@@ -47,7 +47,10 @@ const HighlightsSection = () => {
       {/* Right side content */}
       <div className="flex flex-col sm:gap-[41px] w-full md:w-[710px] pb-[30px]">
         {highlights.map((highlight) => (
-          <div key={highlight.id} className="flex flex-col  gap-[24px] sm:gap-[32px] mt-4 sm:mt-0">
+          <div
+            key={highlight.id}
+            className="flex flex-col  gap-[24px] sm:gap-[32px] mt-4 sm:mt-0"
+          >
             <div className="lg:flex items-start md:space-x-6 pb-4 border-b border-[#CDCDCD]">
               <img
                 src={highlight.image}

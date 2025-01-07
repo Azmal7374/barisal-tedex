@@ -61,7 +61,7 @@ const EventAgenda = () => {
   };
 
   const calculateTimeLeft = (): TimeLeft => {
-    const eventDate = new Date("2024-12-31T00:00:00");
+    const eventDate = new Date("2025-01-30T00:00:00");
     const now = new Date();
     const difference = eventDate.getTime() - now.getTime();
 
@@ -111,14 +111,20 @@ const EventAgenda = () => {
                 className="group flex flex-col sm:flex-row sm:items-center border-b border-[#EBEBEB] gap-4 sm:gap-[20px] pb-4 transition-transform duration-500 ease-out hover:translate-x-3 sm:hover:translate-x-5"
               >
                 <div className="sm:w-[380px]">
-                  <p className={`${inter.variable} text-[#190C12] text-sm sm:text-[18px] font-semibold`}>
+                  <p
+                    className={`${inter.variable} text-[#190C12] text-sm sm:text-[18px] font-semibold`}
+                  >
                     {item.time}
                   </p>
-                  <p className={`${inter.variable} text-[#190C127D] text-xs sm:text-[16px]`}>
+                  <p
+                    className={`${inter.variable} text-[#190C127D] text-xs sm:text-[16px]`}
+                  >
                     {item.duration}
                   </p>
                 </div>
-                <h3 className={`${inter.variable} text-[#190C12] text-lg sm:text-[24px]`}>
+                <h3
+                  className={`${inter.variable} text-[#190C12] text-lg sm:text-[24px]`}
+                >
                   {item.title}
                 </h3>
               </div>
@@ -142,7 +148,9 @@ const EventAgenda = () => {
           style={{ backgroundImage: "url('/agenda.png')" }}
         >
           <div className="flex flex-col gap-6 lg:gap-[32px] justify-center items-center h-[333px]">
-            <h2 className={`${bebasNeue.className} mt-[100px] text-lg sm:text-xl lg:text-[31px] leading-[60px]`}>
+            <h2
+              className={`${bebasNeue.className} mt-[100px] text-lg sm:text-xl lg:text-[31px] leading-[60px]`}
+            >
               Counter Until The Big Event
             </h2>
             {timeLeft && (
@@ -153,12 +161,12 @@ const EventAgenda = () => {
                     className="flex flex-col items-center bg-white text-[#E91F23] rounded-[12px] sm:rounded-[14px] p-4 sm:pt-[30px] sm:pb-[30px] w-[80px] sm:w-[118px]"
                   >
                     <p
-                       className={`${bebasNeue.className} text-[38px] sm:text-[52px] leading-[120%] font-normal text-[#E91F23]`}
+                      className={`${bebasNeue.className} text-[38px] sm:text-[52px] leading-[120%] font-normal text-[#E91F23]`}
                     >
                       {value}
                     </p>
                     <p
-                     className={`${inter.className} text-[16px] leading-[150%] font-normal text-[#E91F23] `}
+                      className={`${inter.variable} text-[16px] leading-[150%] font-normal text-[#E91F23] `}
                     >
                       {unit}
                     </p>
@@ -168,7 +176,7 @@ const EventAgenda = () => {
             )}
             <div className="sm:flex justify-center items-center gap-[24px]  h-[181px] sm:w-[545px] px-[70px]">
               <button
-               className={`${inter.variable} bg-light  h-[50px] w-[230px] sm:w-[161px] text-white  border border-white rounded-[8px] hover:shadow-md text-[18px] hover:text-[#E91F23] font-medium leading-[140%]`}
+                className={`${inter.variable} bg-light  h-[50px] w-[230px] sm:w-[161px] text-white  border border-white rounded-[8px] hover:shadow-md text-[18px] hover:text-[#E91F23] font-medium leading-[140%]`}
               >
                 Join Event
               </button>

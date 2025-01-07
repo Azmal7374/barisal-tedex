@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable no-console */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
@@ -132,21 +133,8 @@ const ThemeSection = () => {
           className="absolute inset-0 flex items-center justify-center cursor-pointer"
           onClick={() => console.log("Play button clicked!")}
         >
-          <div className="relative w-[70px] h-[70px] md:w-[100px] md:h-[100px] flex items-center justify-center rounded-full bg-gradient-to-b from-white/40 to-white/10 backdrop-blur-md">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="white"
-              viewBox="0 0 24 24"
-              stroke="white"
-              strokeWidth={2}
-              className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] transition-transform duration-300 ease-in-out hover:scale-110"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M5 3l14 9-14 9V3z"
-              />
-            </svg>
+          <div >
+          <img className="relative w-[58px] h-[58px]  flex items-center justify-center rounded-full bg-gradient-to-b from-white/40 to-white/10 backdrop-blur-md" src="/play.png" alt="" />
           </div>
         </div>
       </div>

@@ -86,13 +86,19 @@ const GuestsSection = () => {
                 className="w-full h-full object-cover"
               />
 
-             {/* Top-left "TEDx University of Barisal" Text */}
-  <div className="absolute top-[10px] left-[10px]">
-    <h3 className={`${bebasNeue.className} text-[20px] md:text-[24px] text-red-600 uppercase inline-block`}>
-      TED<sup className="text-[12px] md:text-[14px]">x</sup>
-      <sub className={`${inter.variable} text-white text-[12px] md:text-[24px] ml-[10px]`}>University of Barisal</sub>
-    </h3>
-  </div>
+              {/* Top-left "TEDx University of Barisal" Text */}
+              <div className="absolute top-[10px] left-[10px]">
+                <h3
+                  className={`${bebasNeue.className} text-[20px] md:text-[24px] text-red-600 uppercase inline-block`}
+                >
+                  TED<sup className="text-[12px] md:text-[14px]">x</sup>
+                  <sub
+                    className={`${inter.variable} text-white text-[12px] md:text-[24px] ml-[10px]`}
+                  >
+                    University of Barisal
+                  </sub>
+                </h3>
+              </div>
 
               {/* Bottom Red Section */}
               <div className="absolute bottom-0 w-full bg-red-600 p-4 text-white">
